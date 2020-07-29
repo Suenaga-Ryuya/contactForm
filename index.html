@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>演習課題</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 class="title">お問い合わせフォーム</h1>
+  <!-- フォーム -->
+  <div class="contact layout">
+    <!-- フォーム(コンテンツ部分) -->
+    <form class="form" action="mail_comfirm.php" method="POST">
+      <!-- 名前 -->
+      <label for="name">名前<input id="name" class="frame info" type="text" name="name" placeholder="山田 太郎"></label>
+      <!-- メール -->
+      <label for="email">メールアドレス<input id="email" class="frame info" name="mail" type="email" placeholder="yamada@tarou.com"></label>
+      <!-- 年齢 -->
+      <label for="age">年齢
+        <select name="age" id="age" class="frame info">
+          <option value="選択してください">選択してください</option>
+          <script>
+            for (let i = 1; i <= 100; i++) {
+              document.write(`<option value="${i}">${i}</option>`);
+            }
+          </script>
+        </select>
+      </label>
+      <!-- コメント -->
+      <label for="comments">コメント<textarea name="comments" id="comments" class="frame" cols="30" rows="7"></textarea></label>
+      <!-- 送信ボタン -->
+      <input id="clk" class="btn gray" type="submit" value="送信する">
+    </form><!-- フォーム(コンテンツ部分) -->
+  </div><!-- フォーム -->
+
+  <script src="script.js"></script>
+</body>
+</html>

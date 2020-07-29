@@ -1,0 +1,105 @@
+/* common settings */
+body {
+  background:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/student.jpg);
+  background-size: cover;
+}
+
+/* 縦並びのため */
+label,
+input,
+textarea,
+select {
+  display: block;
+}
+
+textarea {
+  width: 50%;
+}
+
+label + label {
+  margin-top: 30px;
+}
+
+.title {
+  border-bottom: 1px solid rgb(228, 228, 228);
+  border-left: 3px solid rgb(143, 143, 143);
+  color: rgb(255, 255, 255);
+  margin: 60px auto 10px;
+  padding-left: 5px;
+  width: 542px;
+}
+
+/* フォームレイアウト */
+.layout {
+  background-color: rgb(238, 238, 238);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(138, 138, 138);
+  margin: 0 auto;
+  padding: 35px 25px;
+  width: 500px;
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 50px;
+}
+
+/* common settings */
+
+
+/* index.html & mail_comfirm.php settings */
+.contact {
+  height: 450px;
+}
+
+/* ボタンカラー分け */
+.gray {
+  background-color: rgb(179, 179, 179);
+  box-shadow: 0 3px 0 rgb(145, 145, 145);
+}
+
+.orange {
+  background-color: orange;
+  box-shadow: 0 3px 0 rgb(156, 87, 8);
+}
+
+/* index.html settings */
+/* 入力部装飾 */
+.frame{
+  border: 1px solid lightgray;
+  border-radius: 0 5px 0 5px;
+  padding: 3px;
+}
+
+.info {
+  height: 25px;
+  width: 50%;
+}
+
+/* mail_comfirme.php settings */
+.text + .text {
+  margin-top: 40px;
+}
+
+.comfirmed {
+  display: flex;
+}
+
+.mod {
+  margin-right: 15px;
+}
+
+/* insert.php settings */
+.msg {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* DOM操作用 */
+.push {
+  box-shadow: none;
+  transform: translateY(3px);
+}
+
